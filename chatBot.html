@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+</head>
+<!--<link rel="stylesheet" href="style.css">-->
+<style>
+    .chatBot{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+p{
+    color:#fff;
+}
+.chat-container {
+    max-width: 600px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #044c70;
+    border: 1px solid #f3f6f7;
+    border-radius: 10px;
+    padding: 5px 2px;
+    box-shadow: 0px 0px 10px rgba(12, 1, 1, 0.2);
+    font-weight: 400;
+}
+
+.chat-messages {
+    max-height: 100px;
+    overflow-y: scroll;
+    padding: 20px;
+    border-bottom: 1px solid #f88f8fe1;
+}
+
+.user-message, .bot-message {
+    background-color:#090003;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 5px 0;
+    height: 100px;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.bot-message {
+    text-align: left;
+}
+
+.user-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color:rgb(13, 180, 180);
+ 
+}
+
+.user-input input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #0b0202;
+    border-radius: 3px;
+}
+
+.user-input button  {
+    background-color: #020509;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.user-input button:hover {
+    background-color: #034542;
+}
+</style>
+<body>
+    <section class="chatBot">
+
+        <h1 class="bot">ChatBot</h1>    
+   
+        <section class="first">   
+         <div class="leftSection"> 
+             <div class="chat-container">
+                 <div class="chat-messages">
+                     <div class="bot-message">
+                         <p>Hello! How can I assist you today?</p>
+                     </div>
+         
+                 </div>
+                 <div class="user-input">
+                     <input type="text" id="user-message" placeholder="Type your message...">
+                     <button id="send-button">Send</button>
+                    
+                   </div>
+             </div>
+           
+          </section>
+</body>
+</html>
