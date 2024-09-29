@@ -1,0 +1,1 @@
+we had made a E-Waste Management Center in which user can Donate their E-waste and win various exiting prices and rewards there . this is a Problem statement of SIH 2K23. We had made the frontend part of this site using HTML,CSS and some JS.
